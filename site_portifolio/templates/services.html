@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Serviços Disponíveis</h1>
+<table>
+    <tr>
+        <th>Serviço</th>
+        <th>Preço</th>
+        <th>Mensal</th>
+        <th>Combo</th>
+    </tr>
+    {% for service in services %}
+    <tr>
+        <td>{{ service.name }}</td>
+        <td>{{ service.price }}</td>
+        <td>{{ service.monthly }}</td>
+        <td>{{ service.combo }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

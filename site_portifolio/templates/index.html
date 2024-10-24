@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Portfólio de Danil</h1>
+        <p>Desenvolvedor focado em criar soluções simples e eficazes para problemas complexos.</p>
+    </header>
+
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <ul>
+            <li><a href="https://github.com/dann17dev/sistema_bancario_01_v4">Sistema Bancário em Python</a></li>
+            <!-- Adicione mais projetos aqui -->
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Para mais informações ou para discutir possíveis colaborações, <a href="{{ url_for('contato') }}">clique aqui</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Danil. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
